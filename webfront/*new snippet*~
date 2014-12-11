@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: nhtml
+# key: nhtml
+# binding: direct-keybinding
+# --
+<html>
+</html>
