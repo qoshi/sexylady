@@ -1,0 +1,9 @@
+<ul class="nav nav-pills" role="tablist">
+  <li role="presentation"><a href="#">基本信息、修改密码、商品分类列表、添加商品分类、添加商品、商品列表、添加广告、广告列表</a></li>
+  <li role="presentation"><a href="#">修改密码</a></li>
+  <li role="presentation"><a href="#"></a></li>
+  <li role="presentation"><a href="#"></a></li>
+  <li role="presentation"><a href="#"></a></li>
+  <li role="presentation"><a href="#"></a></li>
+  <li role="presentation"><a href="#"></a></li>
+</ul>

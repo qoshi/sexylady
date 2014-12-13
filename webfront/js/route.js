@@ -4,7 +4,7 @@ function routeConfig($routeProvider) {
     $routeProvider.
         when('/',{
             // controller : homePageController,
-            templateUrl : tempPath+'homePage.html'
+            templateUrl : tempPath+'frontPage.html'
         }).
         when('/createApp',{
             // controller : createAppController,
@@ -24,7 +24,7 @@ function routeConfig($routeProvider) {
         }).
         when('/shopCenter',{
             // controller : shopCenterController,
-            templateUrl : tempPath+'shopCenter.html'
+            templateUrl : tempPath+'leftMenu.html'
         }).
         when('/advantage',{
             // controller :advantageController, 

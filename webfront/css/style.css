@@ -1,0 +1,22 @@
+#content{
+    margin-top : 50px;
+    padding : 20px;
+}
+
+#leftMenu {
+    margin-top : 20px;
+}
+
+#leftNavigator>li:hover {
+    cursor : pointer;
+    background-color : rgba(100,100,100,0.5);
+}
+
+#rightContent { 
+    background-color : red;
+}
+
+#loginBox {
+    height : 100px;
+    border : 1px solid red;
+}

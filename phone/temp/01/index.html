@@ -1,0 +1,29 @@
+<html ng-app>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./css/lib/bootstrap.min.css" type="text/css" media="screen" />
+    <!-- <link rel="stylesheet" href="./css/style.css" type="text/css" media="screen" /> -->
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <div class="col-xs-4" ng-controller="shopController">
+          {{name}}
+        </div>
+        <div class="col-xs-4 pull-right" ng-controller="userController">
+          {{name}}
+        </div>
+      </div>
+    </header>
+    <div ng-view class="container" id="content">
+    </div>
+  </body>
+  <script type="text/javascript" src="./js/lib/J.js"></script>
+  <script type="text/javascript" src="./js/lib/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./js/lib/angular.js"></script>
+  <script type="text/javascript" src="./js/lib/angular-route.js"></script>
+  <!-- <script type="text/javascript" src="./js/route.js"></script> -->
+  <script type="text/javascript" src="./js/shopController.js"></script>
+  <script type="text/javascript" src="./js/userController.js"></script>
+</html>
