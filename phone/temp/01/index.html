@@ -6,16 +6,16 @@
     <!-- <link rel="stylesheet" href="./css/style.css" type="text/css" media="screen" /> -->
   </head>
   <body>
-    <header>
-      <div class="row">
-        <div class="col-xs-4" ng-controller="shopController">
-          {{name}}
+    <div class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand hidden-sm" href="http://www.bootcss.com" ng-controller='shopController'>{{name}}</a>
+          <a class="navbar-brand hidden-sm pull-right" href="http://www.bootcss.com" ng-controller='userController'>{{name}}</a>
         </div>
-        <div class="col-xs-4 pull-right" ng-controller="userController">
-          {{name}}
+
         </div>
       </div>
-    </header>
+    </div>
     <div ng-view class="container" id="content">
     </div>
   </body>
