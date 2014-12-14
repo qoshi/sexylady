@@ -1,1 +1,17 @@
-<div id="shopCenter"></div>
+<div class="row">
+  <div class="col-xs-2" ng-controller="shopCenterController">
+    <ul id="leftNavigator" class="list-group">
+      <li class="list-group-item" ng-class="{0 : 'active'}[active]" ng-click="setActive(0)">基本信息</li>
+      <li class="list-group-item" ng-class="{1 : 'active'}[active]" ng-click="setActive(1)">修改密码</li>
+      <li class="list-group-item" ng-class="{2 : 'active'}[active]" ng-click="setActive(2)">商品分类列表</li>
+      <li class="list-group-item" ng-class="{3 : 'active'}[active]" ng-click="setActive(3)">添加商品分类</li>
+      <li class="list-group-item" ng-class="{4 : 'active'}[active]" ng-click="setActive(4)">添加商品</li>
+      <li class="list-group-item" ng-class="{5 : 'active'}[active]" ng-click="setActive(5)">商品列表</li>
+      <li class="list-group-item" ng-class="{6 : 'active'}[active]" ng-click="setActive(6)">添加广告</li>
+      <li class="list-group-item" ng-class="{7 : 'active'}[active]" ng-click="setActive(7)">广告列表</li>
+    </ul>
+  </div>
+  <div  class="shopContainer col-xs-10 panel" ng-view>
+  </div>
+</div>
+[active][active]

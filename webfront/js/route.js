@@ -1,36 +1,36 @@
-var ztRoute = angular.module('appCreator',['ngRoute']);
+var ztRoute = angular.module('shopCenter',['ngRoute']);
 function routeConfig($routeProvider) {
     var tempPath = './temp/web/';
     $routeProvider.
         when('/',{
             // controller : homePageController,
-            templateUrl : tempPath+'frontPage.html'
+            templateUrl : tempPath+'info.html'
         }).
-        when('/createApp',{
+        when('/changePass',{
             // controller : createAppController,
-            templateUrl : tempPath+'createApp.html'
+            templateUrl : tempPath+'.html'
         }).
-        when('/price',{
+        when('/classify',{
             // controller : priceController,
             templateUrl : tempPath+'price.html'
         }).
-        when('/introduce',{
+        when('/addClassify',{
             // controller : introduceController,
             templateUrl : tempPath+'introduce.html'
         }).
-        when('/customer',{
+        when('/addItem',{
             // controller : customerController,
             templateUrl : tempPath+'customer.html'
         }).
-        when('/shopCenter',{
+        when('/itemList',{
             // controller : shopCenterController,
             templateUrl : tempPath+'leftMenu.html'
         }).
-        when('/advantage',{
+        when('/addAd',{
             // controller :advantageController, 
             templateUrl : tempPath+'advantage.html'
         }).
-        when('/login',{
+        when('/adList',{
             // controller :loginController, 
             templateUrl : tempPath+'login.html'
         }).

@@ -17,6 +17,10 @@
 }
 
 #loginBox {
-    height : 100px;
-    border : 1px solid red;
+    padding-top : 20px;
 }
+
+a {
+    color : black;
+}
+

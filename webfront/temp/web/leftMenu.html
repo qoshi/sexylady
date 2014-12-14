@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-xs-2">
     <ul id="leftNavigator" class="list-group">
-      <li class="list-group-item active">基本信息</li>
+      <li id="haha" class="list-group-item active">基本信息</li>
       <li class="list-group-item">修改密码</li>
       <li class="list-group-item">商品分类列表</li>
       <li class="list-group-item">添加商品分类</li>
@@ -11,6 +11,12 @@
       <li class="list-group-item">广告列表</li>
     </ul>
   </div>
-  <div class="shopContainer col-xs-10 panel">
+  <div  id="t" class="shopContainer col-xs-10 panel" ng-include  src="'./php/adList.php'">
   </div>
+  <script type="text/javascript">
+    $('#haha').on('click',function(){
+    console.log('haha');
+    $('#t').attr("src","'http://www.baidu.com'");
+    })
+  </script>
 </div>
