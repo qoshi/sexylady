@@ -2,9 +2,9 @@ var ztRoute = angular.module('shopCenter',['ngRoute']);
 function routeConfig($routeProvider) {
     var tempPath = './temp/web/';
     $routeProvider.
-        when('/',{
+        when('/user',{
             // controller : homePageController,
-            templateUrl : tempPath+'info.html'
+            templateUrl : tempPath+'advantage.html'
         }).
         when('/changePass',{
             // controller : createAppController,

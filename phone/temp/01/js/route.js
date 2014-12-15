@@ -19,7 +19,7 @@ function routeConfig($routeProvider) {
             templateUrl : tempPath+'detail.html'
         }).
         when('/cart',{
-            // controller : cartController,
+            controller : cartController,
             templateUrl : tempPath+'cart.html'
         }).
         otherwise({

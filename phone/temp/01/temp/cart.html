@@ -1,0 +1,40 @@
+<div class="container">
+  <div ng-repeat="item in cart" class="panel">
+    <div class="row">
+      <div class="col-xs-2">
+        名称
+      </div>
+      <div class="col-xs-2">
+        {{item.name}}
+      </div>
+      <div class="col-xs-1">
+        数量
+      </div>
+      <div class="col-xs-5 row">
+        <div class="col-xs-3 text-right">
+          <span class="glyphicon glyphicon-plus"></span>
+        </div>
+        <div class="col-xs-2 text-center">
+          {{item.count}}
+        </div>
+        <div class="col-xs-5">
+          <span class="glyphicon glyphicon-minus"></span>
+        </div>
+      </div>
+      <div class="col-xs-2">
+        总价
+      </div>
+      <div class="col-xs-2">
+        {{item.unitPrice*item.count}}
+      </div>
+    </div>
+  </div>
+  <div id="totalPrice" class="row">
+    <div class="col-xs-5">
+      共计
+    </div>
+    <div class="col-xs-7">
+      {{getTotal()}}元^^
+    </div>
+  </div>
+</div>

@@ -1,16 +1,16 @@
 ztRoute.controller("shopCenterController",function($scope) {
     var rPath = [
-        '',
+        '#/',
         '#/changePass',
         '#/classify',
         '#/addClassify',
         '#/addItem',
-        '#/ItemList',
+        '#/itemList',
         '#/addAd',
-        '#/Adlist'
+        '#/adlist'
     ];
     var rRoot = './shopCenter.html';
-    $scope.active = 0;
+    $scope.active = -1;
     $scope.setActive = function(x) {
         $scope.active = x;
         window.location = rRoot+rPath[x];

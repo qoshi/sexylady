@@ -1,3 +1,12 @@
 .bottomIcon {
-    font-size : 20px;
+    font-size : 30px;
+}
+
+#footer {
+    position : fixed;
+    bottom : 0;
+}
+
+#totalPrice {
+    font-size : 30px;
 }
