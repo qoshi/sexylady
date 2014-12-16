@@ -1,0 +1,29 @@
+<div class="text-center">
+  <img class="img-responsive" ng-src="{{item.photo}}" style="margin:auto;">
+</div>
+<div class="row" id="detailInfo">
+  <div class="col-xs-4">
+    商品名:{{item.name}}
+  </div>
+  <div class="col-xs-4 pull-right">
+    单价 {{item.price}}
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-3">
+    购买
+  </div>
+  <div class="col-xs-2 text-right">
+    <span class="glyphicon glyphicon-plus" ng-click="changeCount(1)"></span>
+  </div>
+  <input type="number" class="col-xs-2" ng-model="item.count" />
+  <div class="col-xs-2">
+    <span class="glyphicon glyphicon-minus" ng-click="changeCount(-1)"></span>
+  </div>
+  <div class="col-xs-3 text-center">
+    <button type="button" class="btn btn-success" ng-click="addToCart()">加入购物车</button>
+  </div>
+</div>
+<div class="detailDesc">
+  <p>{{item.intro}}</p>
+</div>

@@ -10,3 +10,16 @@
 #totalPrice {
     font-size : 30px;
 }
+
+#logIn {
+    margin-bottom : 20px;
+}
+
+#detailInfo{
+    font-size : 20px;
+    margin-bottom : 10px;
+}
+
+#detailDesc{
+    font-size : 15px;
+}

@@ -2,21 +2,21 @@
   <div class="panel">
     <div>
       <div class="input-group">
-        <input class="form-control" type="email" placeholder="Enter email">
-                <span class="input-group-addon glyphicon glyphicon-star">@</span>
+        <input class="form-control" type="email" placeholder="请输入物品名称">
+        <span class="input-group-addon glyphicon glyphicon-search"></span>
       </div>
     </div>
-    <div ng-repeat='item in hot' class="panel">
+    <div ng-repeat='item in result' class="panel">
       <div class="row">
-        <div class="col-xs-2">
-          <img src="./pic/test.png" width="100" height="100" alt="" />
+        <div class="col-xs-2" ng-click="showItem(item)">
+          <img ng-src="{{item.photo}}" class="img-responsive" alt="" />
         </div>
         <div class="col-xs-10">
           <div>
             {{item.name}}
           </div>
           <div>
-            {{item.description}}
+            {{item.intro}}
           </div>
         </div>
       </div>

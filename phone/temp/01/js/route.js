@@ -1,4 +1,5 @@
-var shopApp = angular.module('shop',['ngRoute']);
+var shopApp = angular.module('shop',['ngRoute','ui.bootstrap']);
+
 function routeConfig($routeProvider) {
     var tempPath = './temp/';
     $routeProvider.
@@ -11,11 +12,11 @@ function routeConfig($routeProvider) {
             templateUrl : tempPath+'user.html'
         }).
         when('/list',{
-            // controller : listController,
+            controller : listController,
             templateUrl : tempPath+'list.html'
         }).
         when('/detail',{
-            // controller : detailController,
+            controller : detailController,
             templateUrl : tempPath+'detail.html'
         }).
         when('/cart',{
